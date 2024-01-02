@@ -220,23 +220,28 @@ class SignIn extends StatelessWidget {
                                   SizedBox(
                                     height: 34 * fem,
                                   ),
-                                  Container(
-                                    width: 381 * fem,
-                                    height: 48 * fem,
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xff0c5e0b),
-                                      borderRadius:
-                                          BorderRadius.circular(8 * fem),
-                                    ),
-                                    child: Center(
-                                      child: Text(
-                                        'Sign In',
-                                        style: SafeGoogleFont(
-                                          'Montserrat',
-                                          fontSize: 16 * ffem,
-                                          fontWeight: FontWeight.w600,
-                                          height: 1.5 * ffem / fem,
-                                          color: const Color(0xffffffff),
+                                  GestureDetector(
+                                    onTap: () {
+                                      Get.toNamed("/home");
+                                    },
+                                    child: Container(
+                                      width: 381 * fem,
+                                      height: 48 * fem,
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xff0c5e0b),
+                                        borderRadius:
+                                            BorderRadius.circular(8 * fem),
+                                      ),
+                                      child: Center(
+                                        child: Text(
+                                          'Sign In',
+                                          style: SafeGoogleFont(
+                                            'Montserrat',
+                                            fontSize: 16 * ffem,
+                                            fontWeight: FontWeight.w600,
+                                            height: 1.5 * ffem / fem,
+                                            color: const Color(0xffffffff),
+                                          ),
                                         ),
                                       ),
                                     ),

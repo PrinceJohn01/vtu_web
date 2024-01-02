@@ -16,6 +16,7 @@ class _CustomPinCodeTextFieldState extends State<CustomPinCodeTextField> {
   void initState() {
     super.initState();
     controllers = List.generate(4, (index) => TextEditingController());
+    focusNodes = List.generate(4, (index) => FocusNode());
   }
 
   void _onChanged(int index, String value) {
@@ -46,12 +47,13 @@ class _CustomPinCodeTextFieldState extends State<CustomPinCodeTextField> {
 
     return Form(
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: List.generate(
           controllers.length,
           (index) => SizedBox(
-            height: 90,
-            width: 68,
+            height: 45,
+            width: 40,
             child: TextFormField(
               autofocus: index == 0,
               controller: controllers[index],
@@ -68,12 +70,12 @@ class _CustomPinCodeTextFieldState extends State<CustomPinCodeTextField> {
               decoration: InputDecoration(
                 counterText: "",
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
+                  borderRadius: BorderRadius.circular(8.0),
                 ),
               ),
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 20 * ffem,
+                fontSize: 5 * ffem,
                 fontWeight: FontWeight.w700,
                 height: 1.25 * ffem / fem,
                 color: const Color(0xff14202d),

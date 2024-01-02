@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:myapp/utils.dart';
 
 import 'controller.dart';
 
@@ -16,14 +17,22 @@ class MyTextFieldWithToggle extends StatelessWidget {
       init: GeneralController(),
       builder: (viewModel) {
         return SizedBox(
-          height: 40,
+          height: 35,
           child: TextField(
             controller: controller,
             obscureText: viewModel.toggle,
             decoration: InputDecoration(
               hintText: hintText,
+              hintStyle: SafeGoogleFont(
+                'Open Sans',
+                fontSize: 8,
+                fontWeight: FontWeight.w400,
+                height: 1.5,
+                letterSpacing: 0.150000006,
+                color: const Color(0xff4a4a4a),
+              ),
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(8),
               ),
               suffixIcon: IconButton(
                 icon: Icon(

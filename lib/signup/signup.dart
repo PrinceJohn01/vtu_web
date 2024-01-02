@@ -340,26 +340,31 @@ class SignUp extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                  Container(
-                                    // frame48097201yEh (4:2808)
-                                    margin: EdgeInsets.fromLTRB(
-                                        5 * fem, 0 * fem, 5 * fem, 0 * fem),
-                                    width: double.infinity,
-                                    height: 56 * fem,
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xff0c5e0b),
-                                      borderRadius:
-                                          BorderRadius.circular(8 * fem),
-                                    ),
-                                    child: Center(
-                                      child: Text(
-                                        'Sign Un',
-                                        style: SafeGoogleFont(
-                                          'Montserrat',
-                                          fontSize: 16 * ffem,
-                                          fontWeight: FontWeight.w600,
-                                          height: 1.5 * ffem / fem,
-                                          color: const Color(0xffffffff),
+                                  GestureDetector(
+                                    onTap: () {
+                                      Get.toNamed("/home");
+                                    },
+                                    child: Container(
+                                      // frame48097201yEh (4:2808)
+                                      margin: EdgeInsets.fromLTRB(
+                                          5 * fem, 0 * fem, 5 * fem, 0 * fem),
+                                      width: double.infinity,
+                                      height: 56 * fem,
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xff0c5e0b),
+                                        borderRadius:
+                                            BorderRadius.circular(8 * fem),
+                                      ),
+                                      child: Center(
+                                        child: Text(
+                                          'Sign Un',
+                                          style: SafeGoogleFont(
+                                            'Montserrat',
+                                            fontSize: 16 * ffem,
+                                            fontWeight: FontWeight.w600,
+                                            height: 1.5 * ffem / fem,
+                                            color: const Color(0xffffffff),
+                                          ),
                                         ),
                                       ),
                                     ),

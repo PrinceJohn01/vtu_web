@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:myapp/component/pin_code_textfield.dart';
 import 'package:myapp/utils.dart';
 
@@ -98,7 +99,7 @@ class ResetPassword extends StatelessWidget {
                                       ],
                                     ),
                                   ),
-                                  const Center(child: CustomPinCodeTextField())
+                                  const CustomPinCodeTextField()
                                 ],
                               ),
                             ),
@@ -127,7 +128,9 @@ class ResetPassword extends StatelessWidget {
                                   ),
                                   TextButton(
                                     // buttonCch (4:2389)
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Get.toNamed("/newPassword");
+                                    },
                                     style: TextButton.styleFrom(
                                       padding: EdgeInsets.zero,
                                     ),
@@ -140,18 +143,16 @@ class ResetPassword extends StatelessWidget {
                                             BorderRadius.circular(8 * fem),
                                       ),
                                       child: Center(
-                                        child: Center(
-                                          child: Text(
-                                            'CONTINUE',
-                                            textAlign: TextAlign.center,
-                                            style: SafeGoogleFont(
-                                              'Open Sans',
-                                              fontSize: 16 * ffem,
-                                              fontWeight: FontWeight.w600,
-                                              height: 1.5 * ffem / fem,
-                                              letterSpacing: 0.150000006 * fem,
-                                              color: const Color(0xffffffff),
-                                            ),
+                                        child: Text(
+                                          'CONTINUE',
+                                          textAlign: TextAlign.center,
+                                          style: SafeGoogleFont(
+                                            'Open Sans',
+                                            fontSize: 16 * ffem,
+                                            fontWeight: FontWeight.w600,
+                                            height: 1.5 * ffem / fem,
+                                            letterSpacing: 0.150000006 * fem,
+                                            color: const Color(0xffffffff),
                                           ),
                                         ),
                                       ),

@@ -8,9 +8,9 @@ import 'package:myapp/home/fintech-landingpage.dart';
 import 'package:myapp/proceed-to-pay/data.dart';
 import 'package:myapp/resetpasswordotp/reset-password.dart';
 import 'package:myapp/signin/login-web.dart';
-import 'package:myapp/signup/signup.dart';
 
 import 'forgetpassword/forget-password.dart';
+import 'newpassword/new-password.dart';
 
 void main() => runApp(const MyApp());
 
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       defaultTransition: Transition.leftToRight,
       getPages: [
         GetPage(name: '/', page: () => const MyApp()),
-        GetPage(name: '/signUp', page: () => SignUp()),
+        GetPage(name: '/newPassword', page: () => NewPassword()),
         GetPage(name: '/signIn', page: () => SignIn()),
         GetPage(name: '/dashBoard', page: () => DashBoard()),
         GetPage(name: '/buyAirtime', page: () => BuyData()),
