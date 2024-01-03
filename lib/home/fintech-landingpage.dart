@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/utils.dart';
 
+import '../component/pin_code.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -1914,111 +1916,6 @@ class HomeScreen extends StatelessWidget {
                                                 CrossAxisAlignment.center,
                                             children: [
                                               Container(
-                                                // frame48096806d3w (4:856)
-                                                margin: EdgeInsets.fromLTRB(
-                                                    14 * fem,
-                                                    0 * fem,
-                                                    0 * fem,
-                                                    16 * fem),
-                                                width: double.infinity,
-                                                height: 24 * fem,
-                                                child: Row(
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    Container(
-                                                      // timekPT (4:857)
-                                                      margin:
-                                                          EdgeInsets.fromLTRB(
-                                                              0 * fem,
-                                                              0 * fem,
-                                                              141 * fem,
-                                                              0 * fem),
-                                                      child: Text(
-                                                        '9:27',
-                                                        textAlign:
-                                                            TextAlign.center,
-                                                        style: SafeGoogleFont(
-                                                          'Sora',
-                                                          fontSize: 16 * ffem,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                          height:
-                                                              1.5 * ffem / fem,
-                                                          color: const Color(
-                                                              0xffffffff),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                    Container(
-                                                      // rightsideREh (4:858)
-                                                      margin:
-                                                          EdgeInsets.fromLTRB(
-                                                              0 * fem,
-                                                              5.02 * fem,
-                                                              0 * fem,
-                                                              5.02 * fem),
-                                                      height: double.infinity,
-                                                      child: Row(
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .end,
-                                                        children: [
-                                                          Container(
-                                                            // iconmobilesignalXoX (4:867)
-                                                            margin: EdgeInsets
-                                                                .fromLTRB(
-                                                                    0 * fem,
-                                                                    0 * fem,
-                                                                    8 * fem,
-                                                                    0 * fem),
-                                                            width: 18 * fem,
-                                                            height: 12 * fem,
-                                                            child: Image.asset(
-                                                              'assets/home/images/icon-mobile-signal.png',
-                                                              width: 18 * fem,
-                                                              height: 12 * fem,
-                                                            ),
-                                                          ),
-                                                          Container(
-                                                            // wifiSvV (4:863)
-                                                            margin: EdgeInsets
-                                                                .fromLTRB(
-                                                                    0 * fem,
-                                                                    0 * fem,
-                                                                    7 * fem,
-                                                                    0.03 * fem),
-                                                            width: 17 * fem,
-                                                            height: 12 * fem,
-                                                            child: Image.asset(
-                                                              'assets/home/images/wifi.png',
-                                                              width: 17 * fem,
-                                                              height: 12 * fem,
-                                                            ),
-                                                          ),
-                                                          Container(
-                                                            // batterymSy (4:859)
-                                                            margin: EdgeInsets
-                                                                .fromLTRB(
-                                                                    0 * fem,
-                                                                    0 * fem,
-                                                                    0 * fem,
-                                                                    0.97 * fem),
-                                                            width: 28 * fem,
-                                                            height: 13 * fem,
-                                                            child: Image.asset(
-                                                              'assets/home/images/battery.png',
-                                                              width: 28 * fem,
-                                                              height: 13 * fem,
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Container(
                                                 // frame48096874Ged (4:851)
                                                 margin: EdgeInsets.fromLTRB(
                                                     0 * fem,
@@ -2105,7 +2002,6 @@ class HomeScreen extends StatelessWidget {
                                                                 .center,
                                                         children: [
                                                           Container(
-                                                            // setpaymentpinxpH (4:870)
                                                             margin: EdgeInsets
                                                                 .fromLTRB(
                                                                     0 * fem,
@@ -2133,116 +2029,20 @@ class HomeScreen extends StatelessWidget {
                                                               ),
                                                             ),
                                                           ),
-                                                          SizedBox(
-                                                            // frame48097185Und (4:871)
-                                                            width:
-                                                                double.infinity,
-                                                            height: 52 * fem,
-                                                            child: Row(
-                                                              crossAxisAlignment:
-                                                                  CrossAxisAlignment
-                                                                      .center,
-                                                              children: [
-                                                                SizedBox(
-                                                                  // frame48097061pLh (4:872)
-                                                                  width:
-                                                                      52 * fem,
-                                                                  height:
-                                                                      52 * fem,
-                                                                  child: Image
-                                                                      .asset(
-                                                                    'assets/home/images/frame-48097061.png',
-                                                                    width: 52 *
-                                                                        fem,
-                                                                    height: 52 *
-                                                                        fem,
-                                                                  ),
-                                                                ),
-                                                                SizedBox(
-                                                                  width:
-                                                                      14 * fem,
-                                                                ),
-                                                                Container(
-                                                                  // frame480970688sB (4:874)
-                                                                  width:
-                                                                      52 * fem,
-                                                                  height: double
-                                                                      .infinity,
-                                                                  decoration:
-                                                                      BoxDecoration(
-                                                                    color: const Color(
-                                                                        0xffe0e0e0),
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(18 *
-                                                                            fem),
-                                                                  ),
-                                                                ),
-                                                                SizedBox(
-                                                                  width:
-                                                                      14 * fem,
-                                                                ),
-                                                                Container(
-                                                                  // frame48097067sZs (4:875)
-                                                                  width:
-                                                                      52 * fem,
-                                                                  height: double
-                                                                      .infinity,
-                                                                  decoration:
-                                                                      BoxDecoration(
-                                                                    color: const Color(
-                                                                        0xffe0e0e0),
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(18 *
-                                                                            fem),
-                                                                  ),
-                                                                ),
-                                                                SizedBox(
-                                                                  width:
-                                                                      14 * fem,
-                                                                ),
-                                                                Container(
-                                                                  // frame48097066R5b (4:876)
-                                                                  width:
-                                                                      52 * fem,
-                                                                  height: double
-                                                                      .infinity,
-                                                                  decoration:
-                                                                      BoxDecoration(
-                                                                    color: const Color(
-                                                                        0xffe0e0e0),
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(18 *
-                                                                            fem),
-                                                                  ),
-                                                                ),
-                                                              ],
+                                                          Padding(
+                                                            padding:
+                                                                const EdgeInsets
+                                                                    .only(
+                                                                    right: 50,
+                                                                    left: 43),
+                                                            child:
+                                                                MyPinCodeTextField(
+                                                              context: context,
+                                                              onChanged:
+                                                                  (value) {},
                                                             ),
                                                           ),
                                                         ],
-                                                      ),
-                                                    ),
-                                                    Container(
-                                                      // loginsettingsy77 (4:855)
-                                                      margin:
-                                                          EdgeInsets.fromLTRB(
-                                                              0 * fem,
-                                                              0 * fem,
-                                                              0 * fem,
-                                                              16 * fem),
-                                                      child: Text(
-                                                        'Login Settings',
-                                                        textAlign:
-                                                            TextAlign.center,
-                                                        style: SafeGoogleFont(
-                                                          'Montserrat',
-                                                          fontSize: 16 * ffem,
-                                                          fontWeight:
-                                                              FontWeight.w700,
-                                                          height:
-                                                              1.5 * ffem / fem,
-                                                          color: const Color(
-                                                              0xffffffff),
-                                                        ),
                                                       ),
                                                     ),
                                                   ],
@@ -2277,7 +2077,6 @@ class HomeScreen extends StatelessWidget {
                                                                 .start,
                                                         children: [
                                                           Container(
-                                                            // reenterthefourdigitpinLrm (4:879)
                                                             margin: EdgeInsets
                                                                 .fromLTRB(
                                                                     0 * fem,
@@ -2307,89 +2106,16 @@ class HomeScreen extends StatelessWidget {
                                                               ),
                                                             ),
                                                           ),
-                                                          SizedBox(
-                                                            // frame48097186raD (4:880)
-                                                            width:
-                                                                double.infinity,
-                                                            height: 52 * fem,
-                                                            child: Row(
-                                                              crossAxisAlignment:
-                                                                  CrossAxisAlignment
-                                                                      .center,
-                                                              children: [
-                                                                Container(
-                                                                  // frame48097068NYZ (4:881)
-                                                                  width:
-                                                                      52 * fem,
-                                                                  height: double
-                                                                      .infinity,
-                                                                  decoration:
-                                                                      BoxDecoration(
-                                                                    color: const Color(
-                                                                        0xffe0e0e0),
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(18 *
-                                                                            fem),
-                                                                  ),
-                                                                ),
-                                                                SizedBox(
-                                                                  width:
-                                                                      14 * fem,
-                                                                ),
-                                                                Container(
-                                                                  // frame480970676jT (4:882)
-                                                                  width:
-                                                                      52 * fem,
-                                                                  height: double
-                                                                      .infinity,
-                                                                  decoration:
-                                                                      BoxDecoration(
-                                                                    color: const Color(
-                                                                        0xffe0e0e0),
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(18 *
-                                                                            fem),
-                                                                  ),
-                                                                ),
-                                                                SizedBox(
-                                                                  width:
-                                                                      14 * fem,
-                                                                ),
-                                                                Container(
-                                                                  // frame48097066dDb (4:883)
-                                                                  width:
-                                                                      52 * fem,
-                                                                  height: double
-                                                                      .infinity,
-                                                                  decoration:
-                                                                      BoxDecoration(
-                                                                    color: const Color(
-                                                                        0xffe0e0e0),
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(18 *
-                                                                            fem),
-                                                                  ),
-                                                                ),
-                                                                SizedBox(
-                                                                  width:
-                                                                      14 * fem,
-                                                                ),
-                                                                Container(
-                                                                  // frame480970699hj (4:884)
-                                                                  width:
-                                                                      52 * fem,
-                                                                  height: double
-                                                                      .infinity,
-                                                                  decoration:
-                                                                      BoxDecoration(
-                                                                    color: const Color(
-                                                                        0xffe0e0e0),
-                                                                    borderRadius:
-                                                                        BorderRadius.circular(18 *
-                                                                            fem),
-                                                                  ),
-                                                                ),
-                                                              ],
+                                                          Padding(
+                                                            padding:
+                                                                const EdgeInsets
+                                                                    .only(
+                                                                    left: 30),
+                                                            child:
+                                                                MyPinCodeTextField(
+                                                              context: context,
+                                                              onChanged:
+                                                                  (value) {},
                                                             ),
                                                           ),
                                                         ],
